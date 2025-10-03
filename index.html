@@ -3,87 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modi CPA & Advisory - Professional CPA, Tax, and Advisory Services">
   <title>Modi CPA & Advisory</title>
   <style>
-    body {
+    /* Reset and Base Styles */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #000000;
-    }
-    header {
-      text-align: center;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.6;
       padding: 40px 20px;
-      background-color: #004d4d; /* Dark Teal */
-      color: #ffffff;
     }
-    header img {
-      max-width: 180px;
+
+    /* Layout */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .logo {
+      max-width: 150px;
       height: auto;
+      flex-shrink: 0;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    h1 {
+      color: #004d4d;
+      font-size: 36px;
+      margin: 0 0 5px 0;
+      text-align: left;
+    }
+
+    .subtitle {
+      color: #b8860b;
+      font-size: 20px;
+      margin: 0;
+      text-align: left;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #004d4d;
+      font-size: 28px;
       margin-bottom: 15px;
     }
-    header h1 {
-      font-size: 36px;
-      margin: 10px 0;
-      color: #ffffff;
+
+    h3 {
+      color: #004d4d;
+      font-size: 22px;
+      margin: 25px 0 10px;
     }
-    header p {
-      font-size: 18px;
-      color: #d4af37; /* Gold */
+
+    p {
+      margin-bottom: 15px;
     }
-    main {
+
+    /* Lists */
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Contact */
+    .contact {
       text-align: center;
-      padding: 50px 20px;
-    }
-    main h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #004d4d; /* Dark Teal */
-    }
-    main p {
       font-size: 18px;
-      line-height: 1.6;
-      color: #000000; /* Black */
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid #ddd;
     }
+
+    /* Links */
     a {
-      color: #d4af37; /* Gold */
+      color: #004d4d;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
+
     a:hover {
+      color: #b8860b;
       text-decoration: underline;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #000000; /* Black */
-      color: #ffffff;
-      font-size: 14px;
-      margin-top: 40px;
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .logo {
+        max-width: 120px;
+      }
+
+      .header-text {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; background-color: #fdfdfd; margin: 0; padding: 40px;">
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <img src="logo.png" alt="Modi CPA & Advisory Logo" class="logo" onerror="this.style.display='none'">
+      <div class="header-text">
+        <h1>MODI CPA & Advisory</h1>
+        <p class="subtitle">Professional CPA, Tax, and Advisory Services</p>
+      </div>
+    </header>
 
-  <!-- Logo -->
-  <img src="logo.png" alt="Modi CPA & Advisory Logo" 
-       style="max-width:200px; height:auto; display:block; margin:0 auto 20px;">
+    <!-- Main Content -->
+    <main>
+      <!-- Welcome Section -->
+      <section>
+        <h2>Welcome</h2>
+        <p>We provide clear, practical solutions to help you meet financial goals. From accurate tax preparation to strategic advisory, our focus is on delivering reliable results with professionalism and integrity.</p>
+      </section>
 
-  <!-- Title -->
-  <h1 style="color:#004d4d; font-size:36px; margin-bottom:10px;">MODI CPA & Advisory</h1>
+      <!-- About Section -->
+      <section>
+        <h2>About Us</h2>
+        <p>At MODI CPA & Advisory, we combine technical accounting expertise with real-world business insight. With experience in corporate finance, M&A, and small business tax, we understand both compliance requirements and growth strategy.</p>
+        <p>Our approach is straightforward:</p>
+        <ul>
+          <li>Listen to your needs</li>
+          <li>Build tailored solutions</li>
+          <li>Deliver with precision and transparency</li>
+        </ul>
+        <p>We serve individuals, entrepreneurs, and business owners across Florida and beyond, helping them manage taxes, improve financial efficiency, and make smarter decisions.</p>
+      </section>
 
-  <!-- Subtitle -->
-  <p style="color:#b8860b; font-size:20px; margin-top:0;">Professional CPA, Tax, and Advisory Services</p>
+      <!-- Services Section -->
+      <section>
+        <h2>Our Services</h2>
+        
+        <h3>Tax Services</h3>
+        <ul>
+          <li>Individual and business tax preparation</li>
+          <li>Federal and state tax planning</li>
+          <li>IRS representation and compliance support</li>
+        </ul>
 
-  <!-- Contact -->
-  <p style="color:#000; margin-top:40px;">
-    Contact us: 
-    <a href="mailto:parth@modiadvisory.com" style="color:#004d4d; text-decoration:none;">
-      parth@modiadvisory.com
-    </a>
-  </p>
+        <h3>Advisory Services</h3>
+        <ul>
+          <li>M&A due diligence and financial modeling</li>
+          <li>Business valuation and transaction support</li>
+          <li>CFO and controller advisory services</li>
+        </ul>
 
+        <h3>Accounting Services</h3>
+        <ul>
+          <li>Bookkeeping and financial reporting</li>
+          <li>Payroll setup and support</li>
+          <li>QuickBooks and accounting software solutions</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="contact">
+      <p>Contact us: <a href="mailto:parth@modiadvisory.com">parth@modiadvisory.com</a></p>
+    </footer>
+  </div>
 </body>
-
 </html>
-
